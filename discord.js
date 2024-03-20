@@ -4,6 +4,9 @@ const Discord = require('discord.js');
 // Create a new Discord client
 const client = new Discord.Client();
 
+// Access bot token from environment variable
+const token = process.env.BOT_TOKEN;
+
 // Prefix for commands
 const prefix = '!';
 
@@ -47,4 +50,4 @@ client.on('message', async message => {
 });
 
 // Log in to Discord with your app's token
-client.login('MTIxOTgxMzA2NjI5NzA1MzMyNQ.GURDbw.D-rOkbEy1YIqb12B_DdmSzwvC66PwhCSRIEPbg');
+client.login('token');
